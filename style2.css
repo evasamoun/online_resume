@@ -1,0 +1,85 @@
+/* Style global */
+body {
+    background-color: #f0f0f5; /* doux et neutre */
+    color: #222;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    line-height: 1.6;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Conteneur principal pour limiter la largeur du texte */
+.container {
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Conteneur des onglets */
+.tabs {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+/* Onglets style bloc pro */
+.tabs h1 {
+    cursor: pointer;
+    padding: 14px 28px;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #5a5a8d; /* bleu-gris sérieux */
+    border-radius: 10px 10px 0 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    flex: 1;
+    text-align: center;
+}
+
+/* Hover léger */
+.tabs h1:hover {
+    background-color: #7a7abc;
+    transform: translateY(-2px);
+}
+
+/* Onglet actif */
+.tabs h1.active {
+    background-color: #ff6f61; /* accent punchy mais pro */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Contenu des onglets */
+.tabcontent {
+    display: none;
+    padding: 35px 40px;
+    background-color: #ffffff; /* bloc clair */
+    border-radius: 0 10px 10px 10px;
+    color: #222;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+/* Accent côté gauche pour rappel de couleur onglet actif */
+.tabcontent::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 100%;
+    background-color: #ff6f61;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.tabcontent {
+    animation: fadeIn 0.5s ease;
+}

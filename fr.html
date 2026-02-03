@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>La page HTML de Eva</title>
+
+<!-- Pour lier le bootstrap et ma feuille de style css -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="style5.css" rel="stylesheet">
+
+<!-- Ajout de police d'écriture -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Nabla:EDPT,EHLT@200,24&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <meta charset="utf-8" />
+
+
+<!-- SYSTEME d'ONGLET EN JAVA -->
+
+<script>
+function openTab(evt, tabName) {
+    // Cacher tous les contenus
+    let tabcontent = document.getElementsByClassName("tabcontent");
+    for (let i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Retirer la classe active de tous les onglets
+    let tablinks = document.getElementsByClassName("tablinks");
+    for (let i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+    }
+
+    // Afficher le contenu choisi et activer l’onglet
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.classList.add("active");
+}
+
+// Afficher le premier onglet par défaut
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector(".tablinks").click();
+});
+</script>
+
+<!--pour afficher mon nom tout en haut de la page  -->
+
+
+</head>
+
+    <body>
+
+        <header class="site-header">
+    <div class="lang-switch">
+    <a href="index.html">
+        <img src="fr.png" alt="Français">
+    </a>
+
+    <a href="en.html">
+        <img src="uk.png" alt="English">
+    </a>
+</div>
+
+    <div class="site-name">Eva Samoun</div>
+</header>
+
+<!--mes onglets -->
+
+<div class="tabs">
+  <h1 class="tablinks" onclick="openTab(event, 'CV')">CV</h1>
+  <h1 class="tablinks" onclick="openTab(event, 'Apropos')">À propos de moi</h1>
+  <h1 class="tablinks" onclick="openTab(event, 'Parcours')">Mon parcours</h1>
+  <h1 class="tablinks" onclick="openTab(event, 'Interets')">Centres d'intérêt</h1>
+</div>
+
+
+<div id="CV" class="tabcontent">
+
+<h2> Pourquoi ce site web?</h2>
+<p class="descendre-paragraphe">
+<img src="photoid_orange.jpeg" class="photo-profil" alt="photo">
+Un CV tient sur une page. Un parcours, beaucoup moins.
+Ce site est donc né de ce constat : certaines expériences et certains choix méritent un peu plus d’espace que ce que peut afficher mon CV. Ici, je prends le temps de présenter mon parcours, mes projets académiques et professionnels, ainsi que ce qui m’anime, dans un cadre plus informel et plus personnel.
+
+ suis actuellement étudiante en deuxième année à l’IMT Atlantique, sur le campus de Nantes. Depuis mon entrée dans l’enseignement supérieur, je m’intéresse aux questions liées à l’énergie et, plus largement, aux sciences physiques. Cet intérêt m’a conduite à me spécialiser dans le domaine de l’énergie nucléaire, que je considère comme un enjeu majeur et comme une solution pour l'énergie de demain.</p>
+</p>
+
+<p>Pour une lecture plus rapide et formelle, je vous laisse consulter mon CV .</p>
+
+<iframe src="CV_compile.pdf" width="100%" height="500"></iframe>
+</div>
+
+
+<div id="Apropos" class="tabcontent">
+<h2>Mon attrait pour les sciences physiques </h2>
+
+<figure class="photo-vague">
+    <img src="vague.jpg"  alt="photo">
+    <figcaption class="legende"><em>La grande vague de Kanagawa</em>, Hokusai</figcaption>
+
+</figure>
+
+<p>    
+Depuis mes années de classe préparatoire, les sciences physiques occupent une place centrale dans mon parcours. J’ai rapidement été séduite par cette manière cartésienne de comprendre le monde : l’observer, le représenter par des schémas, le traduire en équations, puis tenter d’en résoudre les mécanismes. <br>
+Certains sujets m’ont particulièrement marquée, comme la modélisation des vagues à la surface de l’eau - un exemple simple en apparence, mais qui illustre parfaitement la capacité des équations à décrire des phénomènes complexes et élégants à la fois.
+</p>
+
+<h2>La découverte du secteur de l’énergie</h2>
+
+<p>
+<img src="fission.png" class="photo-fission" alt="photo">
+Avant d’intégrer l’IMT Atlantique, le secteur de l’énergie nucléaire m’était relativement inconnu. La découverte de cette spécialité s’est faite progressivement, au fil des cours, et j'ai finalement adoré. C'est d'abord a richesse de la théorie, avec la physique nucléaire, ainsi que les enjeux scientifiques, techniques et sociétaux qu’elle soulève.
+Cette spécialisation s’inscrit aujourd’hui naturellement dans la continuité de mon intérêt pour les sciences physiques et leurs applications concrètes.
+</p>
+
+</div>
+
+<div id="Parcours" class="tabcontent">
+
+<h2> Mes expériences professionnelles</h2>
+
+<h3>Stage EDF – DSC (Direction Supply Chain)</h3>
+<p class="date">janvier - février 2026 </p>
+<p class="lieu">Saint-Denis</p>
+
+
+<p> Rattachée à la DQPI (Direction Qualité et Performance Industrielle), j’ai intégré le pôle CFSI (Counterfeit, Fraudulent and Suspect Items), en charge de l’identification et du suivi de composants et matériaux potentiellement non conformes (produits contrefaits, non authentiques ou présentant des incertitudes sur leur origine ou leur qualité). <br>
+Dans ce cadre, j’ai mené des missions à dominante technique, impliquant l’analyse de dossiers, l’étude de documentations techniques et réglementaires, ainsi que la synthèse d’informations issues de différentes sources. J’ai notamment contribué à l’élaboration du retour d’expérience (REX) 2025 du pôle, en réalisant le bilan des dossiers traités, en cours et clôturés sur l’année.<br>
+Cette expérience m’a permis de mieux appréhender les exigences industrielles et d’explorer plusieurs aspects de la production et de la chaîne d’approvisionnement.
+</p>
+
+<h3>Stage MBDA Systems – Service Packaging et Simulations</h3>
+<p class="date">juillet 2025 </p>
+<p class="lieu">Le Plessis-Robinson</p>
+
+<p>Stage au sein du service Packaging et Simulations, avec des missions orientées qualité et tests de composants électroniques. J’ai assuré la vérification de la conformité de cartes électroniques (PCB) en sortie de production, en m’appuyant sur l’analyse de données techniques et l’utilisation de la base de données Matrix PLM. <br>
+J’ai également réalisé des essais en conditions contraignantes (tests sous étuve, résistance à la pression pour simuler de hautes altitudes, cycles thermiques) et contribué au développement d’une méthodologie de vérification qualité.
+</p>
+
+<h3>Professeure particulière</h3>
+<p class="date">septembre 2024-maintenant </p>
+<p class="lieu">Nantes, Paris</p>
+<p>Cours particuliers pour des élèves de collège et lycée, en mathématiques ainsi qu’en 1er année de classe préparatoire en chimie.</p>
+
+<h3>Animatrice en camp d’été</h3>
+<p class="date">juillet 2021 - août 2025 </p>
+<p class="lieu">Alpes françaises</p>
+
+<p>Suite à l’obtention de mon diplôme du BAFA, j’ai animé des groupes de jeune en colonie de vacances, lors de séjours de montagne à thématique sportive. Je suis passé via divers organismes, dont l’UCPA.</p>
+
+<h2>Projets académiques et associatifs</h2>
+
+<h3>Bureau des Arts - IMT Atlantique</h3>
+
+<p class="date">2024-2025 </p>
+<p class="lieu">Nantes</p>
+
+<p>Participation à la gestion de la vie culturelle et artistique du campus. En collaboration avec l’équipe, j’ai contribué à l’organisation de cabarets mettant en scène des artistes amateurs de l’école.</p>
+
+<h3>Atlantique Sans Frontières
+2024–2025 </h3>
+<p class="date">2024-2025 </p>
+<p class="lieu">Nantes</p>
+
+<p>
+    <img src="octobre_rose.png" class="photo-logo" alt="photo">
+    Engagée au sein de l’association humanitaire de l’école, j’ai été responsable de la communication des événements sur les réseaux sociaux. En lien avec l’ensemble du bureau, j’ai participé à l’organisation de collectes alimentaires, d’un événement de sensibilisation et de levée de fonds dans le cadre d’Octobre Rose, ainsi que de collectes au profit d’associations caritatives locales.</p>
+
+<h3>Base de données pour le service de chirurgie orthognathique - CHU de Nantes</h3>
+<p class="date">2025 </p>
+<p class="lieu">IMT Atlantique, Nantes</p>
+
+<p>
+<img src="poster_pce_chu.png" class="photo-poster" alt="photo">
+    Projet mené à l’interface entre ingénierie et milieu hospitalier, en collaboration avec une équipe de huit étudiants. À partir d’un besoin exprimé par les chirurgiens du CHU de Nantes, nous avons conçu et développé une application web de bout en bout, destinée à structurer les consultations à chaque étape du parcours patient, avant et après l’intervention chirurgicale.</p>
+
+
+<h3>Implémentation d’un programme de photogrammétrie</h3>
+<p class="date">2025 </p>
+<p class="lieu">IMT Atlantique, Nantes</p>
+<p>Développement d’un programme permettant, à partir de photographies d’un objet, de reconstruire sa représentation tridimensionnelle sur une interface, selon un principe proche de la vision stéréoscopique.</p>
+
+<h3>Élaboration d’un déodorant pour le sportif</h3>
+
+<figure class="photo-vague">
+    <img src="synthese.png"  alt="photo">
+    <figcaption class="legende">Synthèse du lactate de menthyle</figcaption>
+
+</figure>
+
+<p class="date">2023-2024 </p>
+<p class="lieu">Lycée Michelet, Vances</p>
+
+<p>
+
+Projet réalisé en binôme autour du thème « jeu et sport ». Conception d’un déodorant respectueux de la santé du sportif et aux propriétés olfactives agréables. Le projet a couvert l’ensemble des étapes, de la synthèse du composé organique d’intérêt et de l’huile essentielle de limonène à la formulation finale, en s’appuyant sur des plans d’expériences et différentes méthodes de chimie organique et générale.</p>
+
+<h2>Formation</h2>
+
+<h3>Cyclé ingénieur IMT Atlantique</h3>
+<p class="date">septembre 2024- septembre 2027 </p>
+<p class="lieu">Nantes</p>
+<p>Cours autour des thématiques énergétiques :</p>
+    <ul>
+        <li>Physique nucléaire</li>
+        <li>Fonctionnement des réacteurs</li>
+        <li>Neutronique</li>
+        <li>Cycle du combustible (amont, aval)</li>
+    </ul>
+
+<h3>Classe préparatoire physique-chimie (PCSI, PC)</h3>
+<p class="date">2021-2024 </p>
+<p class="lieu">Paris 13e, Vanves</p>
+<p>Lycée Michelet, Vanves</p>
+<p>Lycée Pierre-Gilles de Gennes </p>
+
+<h2>Compétences techniques</h2>
+
+<ul>
+    <li> Python - avancé</li>
+    <li>Java - débutante </li>
+    <li> HTML, CSS - intermédiaire </li>
+    <li>Latex - intermédiaire</li>
+</ul>
+
+<h2>Langues</h2>
+
+<ul>
+    <li> Français - langue maternelle</li>
+    <li>Anglais - niveau C1 </li>
+    <li>Espagnol - niveau B1 </li>
+</ul>
+
+</div>
+<div id="Interets" class="tabcontent">
+<h2>Découvrir le monde et la nature</h2>
+<p>
+<img src="montagne.jpeg" class="photo-droite" alt="photo">
+    Voyager est pour moi une manière d’apprendre autrement. Que ce soit à travers la découverte de capitales européennes ou de destinations plus lointaines, chaque déplacement est l’occasion d’observer de nouveaux styles architecturaux, de goûter à des spécialités locales et de s’immerger dans d’autres cultures, parfois même à travers une langue différente. J’apprécie tout autant explorer la France, entre montagne et campagne, à la recherche de nouveaux paysages. </p>
+
+<h2>Sport collectif</h2>
+<p>
+<img src="equipe.jpeg" class="photo-equipe" alt="photo">
+    Membre de l’équipe féminine de football de l’IMT Atlantique depuis septembre 2024, je participe à des rencontres à l’échelle départementale ainsi qu’à différentes compétitions universitaires. J’ai notamment pris part au tournoi du Cartel organisé par Mines Paris en mai 2024, une expérience marquante mêlant esprit d’équipe et engagement sportif.</p>
+
+<h2>Cinéma</h2>
+<p> Grande amatrice de cinéma, j’aime découvrir des films aux univers variés, capables de surprendre, d’interroger ou simplement de faire voyager le temps d’une séance.</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<footer>
+  <a href="https://www.linkedin.com/in/eva-samoun-6197a8280/" target="_blank">
+    <img src="linkedin.png" alt="LinkedIn" style="width:40px;">
+  </a>
+</footer>
+
+</body>
+</html>

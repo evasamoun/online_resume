@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eva Samoun</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="style5.css" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Nabla:EDPT,EHLT@200,24&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<meta charset="utf-8" />
+
+<script>
+function openTab(evt, tabName) {
+    let tabcontent = document.getElementsByClassName("tabcontent");
+    for (let i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    let tablinks = document.getElementsByClassName("tablinks");
+    for (let i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+    }
+
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.classList.add("active");
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector(".tablinks").click();
+});
+</script>
+
+</head>
+
+<body>
+
+<header class="site-header">
+    
+    <div class="lang-switch">
+    <a href="index.html">
+        <img src="fr.png" alt="Français">
+    </a>
+
+    <a href="en.html">
+        <img src="uk.png" alt="English">
+    </a>
+</div>
+
+    <div class="site-name">Eva Samoun</div>
+</header>
+
+<div class="tabs">
+  <h1 class="tablinks" onclick="openTab(event, 'CV')">Resume</h1>
+  <h1 class="tablinks" onclick="openTab(event, 'Apropos')">About Me</h1>
+  <h1 class="tablinks" onclick="openTab(event, 'Parcours')">Experience & Education</h1>
+  <h1 class="tablinks" onclick="openTab(event, 'Interets')">Interests</h1>
+</div>
+
+<!-- CV -->
+
+<div id="CV" class="tabcontent">
+
+<h2>Why this website?</h2>
+
+<p class="descendre-paragraphe">
+<img src="photoid_orange.jpeg" class="photo-profil" alt="photo">
+
+A resume fits on a single page a personal journey rarely does.  
+This website was created from that observation: some experiences and choices deserve more space than a traditional resume allows. Here, I present my academic and professional background, along with the interests that drive me, in a slightly more personal setting.
+
+I am currently a second-year engineering student at IMT Atlantique (Nantes campus). Since beginning higher education, I have developed a strong interest in energy-related challenges and, more broadly, in the physical sciences. This naturally led me to specialize in nuclear engineering — a field I see as both a major technological challenge and a key contributor to the energy systems of tomorrow.
+</p>
+
+<p>For a more concise and formal overview, you can consult my resume below.</p>
+
+<iframe src="CV_compile.pdf" width="100%" height="500"></iframe>
+
+</div>
+
+
+<!-- ABOUT -->
+
+<div id="Apropos" class="tabcontent">
+
+<h2>My Interest in the Physical Sciences</h2>
+
+<figure class="photo-vague">
+    <img src="vague.jpg" alt="photo">
+    <figcaption class="legende"><em>The Great Wave off Kanagawa</em>, Hokusai</figcaption>
+</figure>
+
+<p>
+Since my intensive preparatory program in physics and chemistry, the physical sciences have played a central role in my academic path. I was quickly drawn to this structured way of understanding the world: observing phenomena, modeling them, translating them into equations, and working toward explaining their underlying mechanisms.
+
+Some topics left a lasting impression on me, such as wave modeling at the surface of water — a concept that appears simple at first glance yet perfectly illustrates how mathematics can describe complex and elegant phenomena.
+</p>
+
+<h2>Discovering the Energy Sector</h2>
+
+<p>
+<img src="fission.png" class="photo-fission" alt="photo">
+
+Before joining IMT Atlantique, I had limited exposure to the nuclear energy sector. My interest developed progressively through coursework, and I ultimately became deeply engaged in the field. I was particularly drawn to the richness of the underlying theory — especially nuclear physics — as well as to the scientific, technical, and societal challenges it raises.
+
+Today, this specialization naturally aligns with my broader interest in the physical sciences and their real-world applications.
+</p>
+
+</div>
+
+
+<!-- EXPERIENCE -->
+
+<div id="Parcours" class="tabcontent">
+
+<h2>Professional Experience</h2>
+
+<h3>EDF Internship – Supply Chain Division</h3>
+<p class="date">January – February 2026</p>
+<p class="lieu">Saint-Denis, France</p>
+
+<p>
+Reporting to the Industrial Quality and Performance Department, I joined the CFSI unit (Counterfeit, Fraudulent and Suspect Items), responsible for identifying and monitoring potentially non-compliant components and materials.
+
+My role involved technical assignments including case analysis, review of regulatory and engineering documentation, and synthesis of information from multiple sources. I notably contributed to the unit’s 2025 operational feedback report by analyzing processed, ongoing, and closed cases.
+
+This experience strengthened my understanding of industrial requirements and provided valuable insight into production environments and supply chain operations.
+</p>
+
+<h3>MBDA Systems Internship – Packaging & Simulation Department</h3>
+<p class="date">July 2025</p>
+<p class="lieu">Le Plessis-Robinson, France</p>
+
+<p>
+Internship within the Packaging and Simulation department, focusing on quality processes and electronic component testing. I verified the compliance of printed circuit boards (PCBs) after production using technical data analysis and the Matrix PLM database.
+
+I also conducted tests under constrained conditions (thermal chambers, pressure simulations for high-altitude environments, and thermal cycling) and contributed to the development of a quality verification methodology.
+</p>
+
+<h3>Private Tutor</h3>
+<p class="date">September 2024 – Present</p>
+<p class="lieu">Nantes, Paris</p>
+<p>Providing one-on-one tutoring for middle and high school students in mathematics, as well as first-year preparatory chemistry.</p>
+
+<h3>Summer Camp Counselor</h3>
+<p class="date">July 2021 – August 2025</p>
+<p class="lieu">French Alps</p>
+
+<p>
+After earning my BAFA youth leadership certification, I supervised groups of children during mountain summer camps focused on sports activities, working with several organizations including UCPA.
+</p>
+
+<h2>Academic & Extracurricular Projects</h2>
+
+<h3>Arts Office – IMT Atlantique</h3>
+<p class="date">2024–2025</p>
+<p class="lieu">Nantes</p>
+
+<p>
+Contributed to campus cultural life by helping organize cabaret-style events featuring student performers.
+</p>
+
+<h3>Atlantique Sans Frontières</h3>
+<p class="date">2024–2025</p>
+<p class="lieu">Nantes</p>
+
+<p>
+<img src="octobre_rose.png" class="photo-logo" alt="photo">
+Active member of the school’s humanitarian association, responsible for promoting events on social media. I helped organize food drives, fundraising initiatives for Breast Cancer Awareness Month, and donation campaigns supporting local charities.
+</p>
+
+<h3>Medical Database Project – Nantes University Hospital</h3>
+<p class="date">2025</p>
+<p class="lieu">IMT Atlantique, Nantes</p>
+
+<p>
+<img src="poster_pce_chu.png" class="photo-poster" alt="photo">
+Collaborative project at the intersection of engineering and healthcare, conducted within a team of eight students. Based on surgeons’ needs, we designed and developed a full web application aimed at structuring patient consultations throughout the surgical journey.
+</p>
+
+<h3>Photogrammetry Program Development</h3>
+<p class="date">2025</p>
+<p class="lieu">IMT Atlantique, Nantes</p>
+<p>
+Developed a program capable of reconstructing a 3D representation of an object from photographs, based on principles similar to stereoscopic vision.
+</p>
+
+<h2>Education</h2>
+
+<h3>Engineering Degree – IMT Atlantique</h3>
+<p class="date">September 2024 – September 2027</p>
+<p class="lieu">Nantes</p>
+
+<ul>
+<li>Nuclear physics</li>
+<li>Reactor engineering</li>
+<li>Neutronics</li>
+<li>Nuclear fuel cycle</li>
+</ul>
+
+<h3>Intensive Preparatory Program in Physics and Chemistry (CPGE)</h3>
+<p class="date">2021–2024</p>
+<p class="lieu">Paris area</p>
+
+<h2>Technical Skills</h2>
+
+<ul>
+<li>Python - Advanced</li>
+<li>Java -  Basic proficiency</li>
+<li>HTML / CSS - Intermediate</li>
+<li>LaTeX - Intermediate</li>
+</ul>
+
+<h2>Languages</h2>
+
+<ul>
+<li>French - Native</li>
+<li>English - C1 (Advanced)</li>
+<li>Spanish - B1 (Intermediate)</li>
+</ul>
+
+</div>
+
+
+<!-- INTERESTS -->
+
+<div id="Interets" class="tabcontent">
+
+<h2>Exploring the World and Nature</h2>
+
+<p>
+<img src="montagne.jpeg" class="photo-droite" alt="photo">
+Traveling is, for me, another way of learning. Whether discovering European capitals or more distant destinations, each journey is an opportunity to observe new architectural styles, experience local cuisine, and immerse myself in different cultures — sometimes even through another language. I equally enjoy exploring France, from mountains to countryside, always in search of new landscapes.
+</p>
+
+<h2>Team Sports</h2>
+
+<p>
+<img src="equipe.jpeg" class="photo-equipe" alt="photo">
+Member of the IMT Atlantique women’s football team since September 2024, I participate in regional matches and university competitions. I notably competed in the Cartel tournament organized by Mines Paris, an experience that combined teamwork with strong athletic commitment.
+</p>
+
+<h2>Cinema</h2>
+
+<p>
+A passionate film enthusiast, I enjoy discovering movies from diverse genres — stories that surprise, challenge perspectives, or simply provide an escape for the duration of a screening.
+</p>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<footer>
+  <a href="https://www.linkedin.com/in/eva-samoun-6197a8280/" target="_blank">
+    <img src="linkedin.png" alt="LinkedIn" style="width:40px;">
+  </a>
+</footer>
+
+</body>
+</html>

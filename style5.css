@@ -1,0 +1,275 @@
+/* Base */
+
+
+body {
+    margin: 0;
+    padding: 70px 0;
+    font-family: "Plus Jakarta Sans", "Roboto", sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.85;
+    background-color: #fafafa;
+    color: #111;
+}
+
+/* Mise en page photo imbriques avec texte */
+
+.photo-profil{
+    float:left;
+    max-width:30%;
+    height:auto;
+    border-radius:10px;
+    padding-right:20px;
+}
+
+.photo-fission{
+    float:left;
+    max-width:25%;
+    height:auto;
+    border-radius:10px;
+    padding-right:20px;
+}
+
+.photo-poster{
+    float:left;
+    max-width:34%;
+    height:auto;
+    border-radius:10px;
+    padding-right:20px;
+}
+
+.photo-equipe{
+    float:left;
+    max-width:42%;
+    height:auto;
+    border-radius:10px;
+    padding-right:20px;
+}
+
+.photo-logo{
+    float:right;
+    max-width:18%;
+    height:auto;
+    border-radius:10px;
+    padding-right:20px;
+}
+
+.photo-droite{
+    float:right;
+    max-width:30%;
+    height:auto;
+    border-radius:10px;
+    padding-right:20px;
+
+}
+.photo-vague {
+    float: right;
+    max-width: 35%;
+    padding-left: 20px; /* pour éviter que le texte colle à l'image */
+}
+
+.photo-vague img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.photo-vague figcaption {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.legende {
+    font-size:0.6em;
+}
+
+/* Navigation */
+
+
+.tabs {
+    max-width: 780px;
+    margin: 0 auto 60px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tablinks {
+    font-size: 0.85rem;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    color: #555;
+    position: relative;
+}
+
+.tablinks:hover {
+    color: #111;
+}
+
+.tablinks.active {
+    color: #111;
+}
+
+.tablinks.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 60%;
+    height: 1px;
+    background-color: #111;
+}
+
+/* Nom fixe en haut */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #fafafa;
+}
+
+.site-name {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 20px 40px 10px;
+
+    font-size: 0.9rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+
+    color: #111;
+}
+
+
+/* Contenu */
+
+.tabcontent {
+    max-width: 780px;
+    margin: 0 auto 80px;
+    padding: 0 40px;
+
+    display: none;
+}
+
+/* Titres */
+
+h2 {
+    margin-top: 60px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    transition: color 0.3s ease;
+}
+
+h2:hover {
+    color:#18379c
+}
+
+h3 {
+    margin-top: 35px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Texte */
+
+p {
+    margin-top: 18px;
+    max-width: 680px;
+}
+
+.date,.lieu{                /* Mise en page des projets et expériences pro */
+    font-size:0.8em;
+    color:#919191;
+    display: inline;
+    margin-right: 6px; /* petit espace entre les date et lieu*/
+
+}
+
+/* Listes */
+
+ul {
+    margin-top: 20px;
+    padding-left: 18px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+
+/* Rythme visuel */
+
+
+h2 + p {
+    margin-top: 30px;
+}
+
+/* Animation des onglets */
+
+.tabcontent {
+    animation: slideIn 0.4s ease;
+}
+
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 800px) {
+
+    .tabs {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .tabcontent {
+        padding: 0 25px;
+    }
+}
+
+/* Pied de page*/
+
+footer {
+  text-align: center; /* centre tout le contenu du footer */
+  padding: 20px 0;
+}
+
+.linkedin-logo {
+  width: 15px;   /* ajuste la taille du logo */
+  height: auto;  /* garde les proportions */
+  transition: 0.2s;
+}
+
+.linkedin-logo:hover {
+  transform: scale(1.5); /*effet au survol */
+}
+
+.descendre-paragraphe {  /*sur onglet 1 pour baisser le CV */
+  margin-bottom: 100px;
+}
+
+.lang-switch{
+    position:absolute;
+    top:20px;
+    right:20px;
+}
+
+.lang-switch img{
+    width:30px;
+    cursor:pointer;
+}
+
