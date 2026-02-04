@@ -151,24 +151,24 @@ li {
 .photo-poster  { max-width: 34%; }
 .photo-equipe  { max-width: 42%; }
 .photo-montagne{ max-width: 30%; }
-.photo-logo-rose    { max-width: 18%; }
+.photo-logo-rose{ max-width: 18%; }
 
 
-/*Photo vague (légende fixéesous l'image) */
+/*Photo vague et synthèse orga (légende fixée sous l'image) */
 
-.photo-vague {
+.photo-legendee {
     float: right;
     max-width: 35%;
     padding-left: 20px;
 }
 
-.photo-vague img {
+.photo-legendee img {
     width: 100%;
     height: auto;
     border-radius: 5px;
 }
 
-.photo-vague figcaption {
+.photo-legendee figcaption {
     text-align: center;
     margin-top: 5px;
 }
@@ -244,4 +244,5 @@ footer {
     width: 30px;
     cursor: pointer;
 }
+
 
