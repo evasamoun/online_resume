@@ -1,6 +1,5 @@
 /* Base */
 
-
 body {
     margin: 0;
     padding: 70px 0;
@@ -11,79 +10,25 @@ body {
     color: #111;
 }
 
-/* Mise en page photo imbriques avec texte */
 
-.photo-profil{
-    float:left;
-    max-width:30%;
-    height:auto;
-    border-radius:10px;
-    padding-right:20px;
+/* En-tête / Navigation */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #fafafa;
 }
 
-.photo-fission{
-    float:left;
-    max-width:25%;
-    height:auto;
-    border-radius:10px;
-    padding-right:20px;
+.site-name {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 20px 40px 10px;
+    font-size: 0.9rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: #111;
 }
-
-.photo-poster{
-    float:left;
-    max-width:34%;
-    height:auto;
-    border-radius:10px;
-    padding-right:20px;
-}
-
-.photo-equipe{
-    float:left;
-    max-width:42%;
-    height:auto;
-    border-radius:10px;
-    padding-right:20px;
-}
-
-.photo-logo{
-    float:right;
-    max-width:18%;
-    height:auto;
-    border-radius:10px;
-    padding-right:20px;
-}
-
-.photo-droite{
-    float:right;
-    max-width:30%;
-    height:auto;
-    border-radius:10px;
-    padding-right:20px;
-
-}
-.photo-vague {
-    float: right;
-    max-width: 35%;
-    padding-left: 20px; /* pour éviter que le texte colle à l'image */
-}
-
-.photo-vague img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.photo-vague figcaption {
-    text-align: center;
-    margin-top: 5px;
-}
-
-.legende {
-    font-size:0.6em;
-}
-
-/* Navigation */
-
 
 .tabs {
     max-width: 780px;
@@ -98,16 +43,12 @@ body {
     font-weight: 400;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-
     cursor: pointer;
     color: #555;
     position: relative;
 }
 
-.tablinks:hover {
-    color: #111;
-}
-
+.tablinks:hover,
 .tablinks.active {
     color: #111;
 }
@@ -122,27 +63,6 @@ body {
     background-color: #111;
 }
 
-/* Nom fixe en haut */
-
-.site-header {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background-color: #fafafa;
-}
-
-.site-name {
-    max-width: 780px;
-    margin: 0 auto;
-    padding: 20px 40px 10px;
-
-    font-size: 0.9rem;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-
-    color: #111;
-}
-
 
 /* Contenu */
 
@@ -150,15 +70,15 @@ body {
     max-width: 780px;
     margin: 0 auto 80px;
     padding: 0 40px;
-
     display: none;
+    animation: slideIn 0.4s ease;
 }
+
 
 /* Titres */
 
 h2 {
-    margin-top: 60px;
-    margin-bottom: 10px;
+    margin: 60px 0 10px;
     font-size: 1.3rem;
     font-weight: 500;
     letter-spacing: 0.04em;
@@ -166,7 +86,7 @@ h2 {
 }
 
 h2:hover {
-    color:#18379c
+    color: #18379c;
 }
 
 h3 {
@@ -176,6 +96,7 @@ h3 {
     color: #333;
 }
 
+
 /* Texte */
 
 p {
@@ -183,15 +104,18 @@ p {
     max-width: 680px;
 }
 
-.date,.lieu{                /* Mise en page des projets et expériences pro */
-    font-size:0.8em;
-    color:#919191;
+.date,.lieu {
+    font-size: 0.8em;
+    color: #919191;
     display: inline;
-    margin-right: 6px; /* petit espace entre les date et lieu*/
-
+    margin-right: 6px;
 }
 
-/* Listes */
+.descendre-paragraphe {
+    margin-bottom: 100px;
+}
+
+/*Listes*/
 
 ul {
     margin-top: 20px;
@@ -202,21 +126,66 @@ li {
     margin-bottom: 8px;
 }
 
+/* Règles communes images*/
+
+.photo-profil, .photo-fission,.photo-poster,.photo-equipe,.photo-droite,.photo-logo {
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Images flottées à gauche */
+.photo-profil,.photo-fission,.photo-poster,.photo-equipe {
+    float: left;
+    padding-right: 20px;
+}
+
+/* Images flottées à droite */
+.photo-droite,.photo-logo {
+    float: right;
+    padding-right: 20px;
+}
+
+/* Tailles spécifiques des images */
+.photo-profil  { max-width: 30%; }
+.photo-fission { max-width: 25%; }
+.photo-poster  { max-width: 34%; }
+.photo-equipe  { max-width: 42%; }
+.photo-droite  { max-width: 30%; }
+.photo-logo    { max-width: 18%; }
 
 
-/* Rythme visuel */
+/*Photo vague (légende fixéesous l'image) */
 
+.photo-vague {
+    float: right;
+    max-width: 35%;
+    padding-left: 20px;
+}
+
+.photo-vague img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.photo-vague figcaption {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.legende {
+    font-size: 0.6em;
+}
+
+
+/*Rythme visuel */
 
 h2 + p {
     margin-top: 30px;
 }
 
-/* Animation des onglets */
 
-.tabcontent {
-    animation: slideIn 0.4s ease;
-}
-
+/*Animation*/
 
 @keyframes slideIn {
     from {
@@ -228,6 +197,9 @@ h2 + p {
         transform: translateY(0);
     }
 }
+
+
+/*Responsive*/
 
 @media (max-width: 800px) {
 
@@ -241,35 +213,34 @@ h2 + p {
     }
 }
 
+
 /* Pied de page*/
 
 footer {
-  text-align: center; /* centre tout le contenu du footer */
-  padding: 20px 0;
+    text-align: center;
+    padding: 20px 0;
 }
 
 .linkedin-logo {
-  width: 15px;   /* ajuste la taille du logo */
-  height: auto;  /* garde les proportions */
-  transition: 0.2s;
+    width: 15px;
+    height: auto;
+    transition: 0.2s;
 }
 
 .linkedin-logo:hover {
-  transform: scale(1.5); /*effet au survol */
+    transform: scale(1.5);
 }
 
-.descendre-paragraphe {  /*sur onglet 1 pour baisser le CV */
-  margin-bottom: 100px;
+
+/*Sélecteur de langue*/
+
+.lang-switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
-.lang-switch{
-    position:absolute;
-    top:20px;
-    right:20px;
+.lang-switch img {
+    width: 30px;
+    cursor: pointer;
 }
-
-.lang-switch img{
-    width:30px;
-    cursor:pointer;
-}
-
