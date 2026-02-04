@@ -128,7 +128,7 @@ li {
 
 /* Règles communes images*/
 
-.photo-profil, .photo-fission,.photo-poster,.photo-equipe,.photo-droite,.photo-logo {
+.photo-profil, .photo-fission,.photo-poster,.photo-equipe,.photo-logo-rose,.photo-montagne {
     height: auto;
     border-radius: 10px;
 }
@@ -140,7 +140,7 @@ li {
 }
 
 /* Images flottées à droite */
-.photo-droite,.photo-logo {
+.photo-logo-rose,photo-montagne {
     float: right;
     padding-right: 20px;
 }
@@ -150,8 +150,8 @@ li {
 .photo-fission { max-width: 25%; }
 .photo-poster  { max-width: 34%; }
 .photo-equipe  { max-width: 42%; }
-.photo-droite  { max-width: 30%; }
-.photo-logo    { max-width: 18%; }
+.photo-montagne{ max-width: 30%; }
+.photo-logo-rose    { max-width: 18%; }
 
 
 /*Photo vague (légende fixéesous l'image) */
@@ -244,3 +244,4 @@ footer {
     width: 30px;
     cursor: pointer;
 }
+
